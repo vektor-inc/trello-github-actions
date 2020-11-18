@@ -243,7 +243,8 @@ function putCard(apiKey, apiToken, cardId, params) {
 function addUrlSourceToCard(apiKey, apiToken, cardId, url) {
   const options = {
     method: 'POST',
-    url: `https://api.trello.com/1/cards/${cardId}/attachments?key=${apiKey}&token=${apiToken}`,
+    // url: `https://api.trello.com/1/cards/${cardId}/attachments?key=${apiKey}&token=${apiToken}`,
+    url: `https://api.trello.com/1/cards/${cardId}?key=${apiKey}&token=${apiToken}`,
     form: {
       url: url
     }
